@@ -1,0 +1,43 @@
+p {
+  color: blueviolet;
+}
+
+h1 {
+  border: 2px solid teal;
+}
+
+a:link {
+  color: white;
+  background-color: dodgerblue;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 10px;
+  display: inline-block;
+}
+
+a:visited {
+  color: white;
+  background-color: dodgerblue;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 10px;
+  display: inline-block;
+}
+
+a:hover {
+  color: white;
+  background-color: darkcyan;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 10px;
+  display: inline-block;
+}
+
+a:active {
+  color: white;
+  background-color: darkcyan;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 10px;
+  display: inline-block;
+}
