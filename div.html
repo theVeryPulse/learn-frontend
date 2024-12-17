@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>div practice</title>
+    <style>
+      h2 {
+        margin-bottom: 0;
+      }
+      .red-square {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 50px;
+      }
+      .blue-circle {
+        background-color: green;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+      }
+      .survey-box {
+        margin-top: 20px;
+        width: 300px;
+        border: 1.5px solid gray;
+        padding: 10px 20px;
+      }
+
+      /* YouTube Music */
+      .install {
+        margin-top: 20px;
+        color: white;
+        padding: 20px 10px;
+        background-color: rgb(33, 33, 33);
+        width: 300px;
+      }
+      .title {
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 0;
+      }
+      .youtube-text {
+        color: rgb(188, 188, 188);
+        margin-bottom: 0;
+      }
+
+      /* Tweet */
+      .tweet-container {
+        box-shadow: 0 0 3px rgb(172, 172, 172);
+        display: inline-block;
+        padding: 7px;
+        border-radius: 10px;
+      }
+      .avatar {
+        height: 40px;
+        width: 40px;
+        object-fit: cover;
+        vertical-align: middle;
+        border-radius: 100%;
+      }
+      .avatar:hover {
+        cursor: pointer;
+      }
+      .tweet-input {
+        border: none;
+        vertical-align: middle;
+        height: 30px;
+      }
+      .tweet-button {
+        color: white;
+        vertical-align: middle;
+        background-color: rgb(70, 175, 255);
+        border: none;
+        height: 30px;
+        width: 70px;
+        border-radius: 15px;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      .tweet-button:hover {
+        cursor: pointer;
+      }
+      .friend-preview {
+        width: 200px;
+        height: 300px;
+        margin-top: 10px;
+        box-shadow: 0 0 5px rgb(188, 188, 188);
+        display: inline-block;
+        margin-right: 15px;
+      }
+      .preview-img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: 0;
+      }
+      .name {
+        font-weight: bold;
+        margin-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 0;
+      }
+      .mutual-friend {
+        margin-left: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: rgb(103, 103, 103);
+      }
+      .add-friend-button {
+        margin-top: 10px;
+        margin-left: 10px;
+        color: white;
+        background-color: rgb(47, 116, 243);
+        border: none;
+        border-radius: 5px;
+        padding: 8px 15px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Red square -->
+    <h2>Red square</h2>
+    <hr />
+    <div class="red-square"></div>
+
+    <!-- Blue circle -->
+    <h2>Blue circle</h2>
+    <hr />
+    <div class="blue-circle"></div>
+
+    <!-- Survey box -->
+    <h2>Survery box</h2>
+    <hr />
+    <div class="survey-box">
+      <p style="margin-top: 0">Satisfied with our services?</p>
+      <button>Yes</button>
+      <button>No</button>
+    </div>
+
+    <!-- Install YouTube Music -->
+    <h2>YouTube Music</h2>
+    <hr />
+    <div class="install">
+      <p class="title">Install YouTube Music</p>
+      <p class="youtube-text">
+        Add YouTube Music to your desktop for quick and easy access
+      </p>
+    </div>
+
+    <!-- Twitter -->
+    <h2>Twitter</h2>
+    <hr />
+    <div class="tweet-container">
+      <img src="YouTube/img/thumbnail-1.webp" alt="avatar" class="avatar" />
+      <input type="text" placeholder="What's happening?" class="tweet-input" />
+      <button class="tweet-button">Tweet</button>
+    </div>
+
+    <!-- Add friend -->
+    <h2>Add friend</h2>
+    <hr />
+    <div class="friend-preview">
+      <img src="YouTube/img/thumbnail-1.webp" alt="" class="preview-img" />
+      <p class="name">Oliver</p>
+      <p class="mutual-friend">2 mutual friends</p>
+      <button class="add-friend-button">Add Friend</button>
+    </div>
+
+    <div class="friend-preview">
+      <img src="YouTube/img/thumbnail-2.webp" alt="" class="preview-img" />
+      <p class="name">Mimi</p>
+      <p class="mutual-friend">3 mutual friends</p>
+      <button class="add-friend-button">Add Friend</button>
+    </div>
+
+    <div class="friend-preview">
+      <img src="YouTube/img/thumbnail-3.webp" alt="" class="preview-img" />
+      <p class="name">Rex</p>
+      <p class="mutual-friend">4 mutual friends</p>
+      <button class="add-friend-button">Add Friend</button>
+    </div>
+  </body>
+</html>
