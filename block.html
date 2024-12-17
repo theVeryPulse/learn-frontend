@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <style>
+      h2 {
+        margin-bottom: 0;
+      }
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      /* Block input */
+      .block-input {
+        display: block;
+        margin-top: 3px;
+        width: 150px;
+        margin-left: 30px;
+      }
+
+      /* Text mixed with buttons */
+      .inline-block {
+        display: inline-block;
+        width: 250px;
+        vertical-align: middle;
+      }
+
+      /* Google Search */
+      .google-search {
+        border: none;
+        box-shadow: 0 0 2px rgb(100, 100, 100);
+        margin-left: 30%;
+        width: 40%;
+        height: 30px;
+        border-radius: 15px;
+        padding-left: 15px;
+      }
+      .google-logo {
+        display: block;
+        width: 30%;
+        margin-left: 35%;
+      }
+
+      /* Sign up */
+      .sign-up {
+        width: 20%;
+        margin-left: 40%;
+      }
+      .line {
+        height: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+      }
+      .first-name-input,
+      .last-name-input,
+      .email-input {
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 3px;
+        border-color: rgb(170, 169, 169);
+        padding-left: 5px;
+      }
+      .first-name-input,
+      .last-name-input,
+      .email-input,
+      .sign-up-button {
+        border-radius: 6px;
+      }
+      .first-name-input {
+        width: 45%;
+        margin-left: 0;
+        margin-right: 0%;
+      }
+      .last-name-input {
+        width: 45%;
+        margin-right: 0;
+      }
+      .email-input {
+        width: 100%;
+      }
+      .sign-up-button {
+        width: 100%;
+        height: 30px;
+        border: none;
+        color: white;
+        background-color: rgb(25, 116, 221);
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      /* Uber */
+      .uber-input {
+        display: block;
+        margin-bottom: 5px;
+        background-color: rgba(128, 128, 128, 0.152);
+        border: none;
+        height: 40px;
+        padding-left: 10px;
+        width: 400px;
+      }
+      .request-now-button,
+      .schedule-button {
+        margin-top: 20px;
+        border: none;
+        min-width: 100px;
+        margin-right: 10px;
+        cursor: pointer;
+        padding: 10px 25px;
+      }
+      .request-now-button {
+        color: white;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Inputs on different lines -->
+    <h2>Input with block display</h2>
+    <hr />
+    <input type="text" placeholder="Name" class="block-input" />
+    <input type="text" placeholder="Email" class="block-input" />
+
+    <!-- Text mixed with buttons -->
+    <h2>Text mixed with buttons</h2>
+    <hr />
+    <p class="inline-block">
+      Thanks for chatting with our customer support. Would you like to take our
+      quick survey?
+    </p>
+    <button>Yes</button>
+    <button>No</button>
+
+    <!-- Google Search -->
+    <h2>Google</h2>
+    <hr />
+    <img src="google-logo.gif" alt="Google Logo" class="google-logo" />
+    <p>
+      <input
+        class="google-search"
+        type="text"
+        placeholder="Search Google or type a URL"
+      />
+    </p>
+
+    <!-- Sign up form -->
+    <h2>Sign Up Form</h2>
+    <hr />
+    <div class="sign-up" style="margin-top: 50px">
+      <div class="line">
+        <input type="text" placeholder="First name" class="first-name-input" />
+        <input type="text" placeholder="Last name" class="last-name-input" />
+      </div>
+      <div class="line">
+        <input type="text" placeholder="Email" class="email-input" />
+      </div>
+      <div class="line">
+        <button class="sign-up-button">Sign Up</button>
+      </div>
+    </div>
+
+    <!-- Uber request ride -->
+    <h2>Uber request</h2>
+    <hr />
+    <p style="font-size: 30px; margin-bottom: 30px">Request a ride now</p>
+    <input type="text" class="uber-input" placeholder="Enter pickup location" />
+    <input type="text" class="uber-input" placeholder="Enter destination" />
+    <button class="request-now-button">Request now</button>
+    <button class="schedule-button">Schedule for later</button>
+  </body>
+</html>
