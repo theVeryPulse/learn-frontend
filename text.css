@@ -1,0 +1,105 @@
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* YouTube Video */
+
+.video-title {
+  font-size: 18px;
+  font-weight: bold;
+  width: 300px;
+  line-height: 120%;
+  margin-bottom: 0;
+}
+
+.video-stats {
+  margin-top: 3px;
+  color: rgb(96, 96, 96);
+  font-size: 14px;
+}
+
+.author {
+  color: rgb(96, 96, 96);
+  font-size: 14px;
+}
+
+.video-description {
+  font-size: 14px;
+  color: rgb(96, 96, 96);
+  width: 280px;
+}
+
+.shop-option {
+  font-size: 14px;
+  text-align: center;
+  margin-left: 8px;
+  margin-right: 8px;
+  background-color: rgb(227, 65, 64);
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 50px;
+}
+
+.shop-link {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.shop-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* MacBook Pro */
+
+.new,
+.product-name,
+.slogan,
+.price-info {
+  text-align: center;
+}
+.new {
+  color: rgb(250, 142, 0);
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.product-name {
+  font-size: larger;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.slogan {
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+.price-info {
+  margin-top: 7px;
+  color: rgb(62, 62, 62);
+  margin-bottom: 0;
+}
+.buy-button {
+  border: 0;
+  border-radius: 20px;
+  height: 30px;
+  width: 55px;
+  color: white;
+  background-color: rgb(56, 94, 218);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Stock Price */
+
+.stock-price {
+  font-size: 25px;
+}
+.currency {
+  margin-left: 5px;
+  color: rgb(86, 86, 86);
+}
+.change-today {
+  color: rgb(45, 132, 57);
+  margin-top: 5px;
+  margin-bottom: 0;
+}
