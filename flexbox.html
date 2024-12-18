@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox practice</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h2 {
+        margin-bottom: 0;
+      }
+      .notif {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        border: 1.5px solid rgb(188, 188, 188);
+        border-radius: 10px;
+        row-gap: 6px;
+        padding: 10px 10px;
+      }
+      .item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .bubble {
+        color: white;
+        background-color: rgb(21, 107, 193);
+        padding: 3px 10px;
+        border-radius: 20px;
+        font-weight: bold;
+      }
+      /* Header */
+      .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 50px;
+        background-color: rgb(130, 77, 157);
+        align-items: center;
+      }
+      .home {
+        color: white;
+        font-weight: bold;
+        margin-left: 20px;
+        margin-right: 20px;
+        cursor: pointer;
+      }
+      .search {
+        max-width: 800px;
+        text-align: center;
+        flex: 1;
+      }
+      .search-input {
+        box-sizing: border-box;
+        width: 100%;
+        height: 30px;
+        outline: none;
+        border-radius: 20px;
+        border: none;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .download {
+        height: 80%;
+        margin-right: 10px;
+        margin-left: 20px;
+      }
+      .download-button {
+        background-color: transparent;
+        border: 1.5px solid white;
+        border-radius: 3px;
+        color: white;
+        height: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- justify-content: center -->
+    <h2>justify-content: center</h2>
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        margin: 0 0;
+        border-width: 2px;
+        border-style: solid;
+        border-color: gray;
+        justify-content: center;
+      "
+    >
+      <div style="background-color: lightblue; width: 100px">100px</div>
+      <div style="background-color: lightpink; width: 100px">100px</div>
+      <!-- flex: 1 is equivalent to 1fr in grid -->
+    </div>
+    <!-- justify-content: space between -->
+    <h2>space between</h2>
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        margin: 0 0;
+        border-width: 2px;
+        border-style: solid;
+        border-color: gray;
+        justify-content: space-between;
+      "
+    >
+      <div style="background-color: lightblue; width: 100px">100px</div>
+      <div style="background-color: lightpink; width: 100px">100px</div>
+      <div style="background-color: lightcoral; width: 200px">200px</div>
+      <!-- flex: 1 is equivalent to 1fr in grid -->
+    </div>
+    <!-- Space around -->
+    <h2>space around</h2>
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        margin: 0 0;
+        border-width: 2px;
+        border-style: solid;
+        border-color: gray;
+        justify-content: space-around;
+      "
+    >
+      <div style="background-color: lightblue; width: 100px">100px</div>
+      <div style="background-color: lightpink; width: 100px">100px</div>
+      <div style="background-color: lightcoral; width: 200px">200px</div>
+    </div>
+    <!-- aligh items -->
+    <h2>align-items</h2>
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        margin: 0 0;
+        border-width: 2px;
+        border-style: solid;
+        border-color: gray;
+        justify-content: space-around;
+        height: 100px;
+        align-items: center;
+      "
+    >
+      <div style="background-color: lightblue; width: 100px">100px</div>
+      <div style="background-color: lightpink; width: 100px">100px</div>
+      <div style="background-color: lightcoral; width: 200px">200px</div>
+      <!-- flex: 1 is equivalent to 1fr in grid -->
+    </div>
+    <div
+      style="display: flex; flex-direction: row; height: 70px; margin-top: 20px"
+    >
+      <div style="background-color: lightblue; width: 100px">100px</div>
+      <div style="background-color: lightpink">
+        div2
+        <p>text</p>
+      </div>
+    </div>
+
+    <!-- Notifications -->
+    <h2>Notifications</h2>
+    <hr />
+    <div class="notif">
+      <div class="item">
+        <div>Home</div>
+        <div class="bubble">14</div>
+      </div>
+      <div class="item">
+        <div>Notifications</div>
+        <div class="bubble">3</div>
+      </div>
+      <div class="item">
+        <div>Messages</div>
+        <div class="bubble">5</div>
+      </div>
+    </div>
+
+    <h2>Header</h2>
+    <hr />
+    <div class="header">
+      <div class="home">Home</div>
+      <div class="search">
+        <input type="text" placeholder="Search" class="search-input" />
+      </div>
+      <div class="download">
+        <button class="download-button">Download</button>
+      </div>
+    </div>
+  </body>
+</html>
