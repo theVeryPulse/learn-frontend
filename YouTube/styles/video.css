@@ -1,0 +1,45 @@
+.video-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 30px;
+}
+
+.thumbnail {
+  border-radius: 10px;
+  width: 100%;
+}
+
+/* Channel image, video title, uploader, views */
+.video-info {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 0.1fr 0.9fr; /* 10% and 90% columns */
+  column-gap: 10px;
+}
+
+.channel-img-container {
+  width: 100%;
+}
+
+.channel-img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.video-title {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  line-height: 20px;
+}
+
+.video-uploader,
+.video-stats {
+  font-size: x-small;
+  color: grey;
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
