@@ -81,35 +81,38 @@
       .tweet-button:hover {
         cursor: pointer;
       }
+      .friend-grid {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        column-gap: 20px;
+      }
       .friend-preview {
-        width: 200px;
         height: 300px;
-        margin-top: 10px;
         box-shadow: 0 0 5px rgb(188, 188, 188);
-        display: inline-block;
-        margin-right: 15px;
       }
       .preview-img {
-        width: 200px;
-        height: 200px;
+        width: 100%;
+        aspect-ratio: 1 / 1;
         object-fit: cover;
         object-position: 0;
       }
+      .name,
+      .mutual-friend,
+      .add-friend-button {
+        margin-left: 10px;
+      }
       .name {
         font-weight: bold;
-        margin-left: 10px;
         margin-top: 5px;
         margin-bottom: 0;
       }
       .mutual-friend {
-        margin-left: 10px;
         margin-top: 0;
         margin-bottom: 0;
         color: rgb(103, 103, 103);
       }
       .add-friend-button {
         margin-top: 10px;
-        margin-left: 10px;
         color: white;
         background-color: rgb(47, 116, 243);
         border: none;
@@ -161,25 +164,27 @@
     <!-- Add friend -->
     <h2>Add friend</h2>
     <hr />
-    <div class="friend-preview">
-      <img src="YouTube/img/thumbnail-1.webp" alt="" class="preview-img" />
-      <p class="name">Oliver</p>
-      <p class="mutual-friend">2 mutual friends</p>
-      <button class="add-friend-button">Add Friend</button>
-    </div>
+    <div class="friend-grid">
+      <div class="friend-preview">
+        <img src="YouTube/img/thumbnail-1.webp" alt="" class="preview-img" />
+        <p class="name">Oliver</p>
+        <p class="mutual-friend">2 mutual friends</p>
+        <button class="add-friend-button">Add Friend</button>
+      </div>
 
-    <div class="friend-preview">
-      <img src="YouTube/img/thumbnail-2.webp" alt="" class="preview-img" />
-      <p class="name">Mimi</p>
-      <p class="mutual-friend">3 mutual friends</p>
-      <button class="add-friend-button">Add Friend</button>
-    </div>
+      <div class="friend-preview">
+        <img src="YouTube/img/thumbnail-2.webp" alt="" class="preview-img" />
+        <p class="name">Mimi</p>
+        <p class="mutual-friend">3 mutual friends</p>
+        <button class="add-friend-button">Add Friend</button>
+      </div>
 
-    <div class="friend-preview">
-      <img src="YouTube/img/thumbnail-3.webp" alt="" class="preview-img" />
-      <p class="name">Rex</p>
-      <p class="mutual-friend">4 mutual friends</p>
-      <button class="add-friend-button">Add Friend</button>
+      <div class="friend-preview">
+        <img src="YouTube/img/thumbnail-3.webp" alt="" class="preview-img" />
+        <p class="name">Rex</p>
+        <p class="mutual-friend">4 mutual friends</p>
+        <button class="add-friend-button">Add Friend</button>
+      </div>
     </div>
   </body>
 </html>
