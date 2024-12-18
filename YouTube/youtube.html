@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="youtube.css" />
+    <!-- Add font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+      }
+      p {
+        margin: 0;
+      }
+      .search-bar {
+        font-size: 15px;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 1px 1px 4px rgb(150, 150, 150);
+        padding-left: 15px;
+      }
+      .search-bar:focus {
+        border: none;
+      }
+      .video-preview {
+        width: 350px;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 20px;
+        margin-right: 15px;
+      }
+      .thumbnail {
+        border-radius: 10px;
+        width: 100%;
+      }
+      /* Channel image, video title, uploader, views */
+      .video-info {
+        padding-top: 10px;
+      }
+      .channel-img-container {
+        display: inline-block;
+        margin-top: 0px;
+        width: 11%;
+        vertical-align: top"
+      }
+      .channel-img {
+        width: 100%;
+        border-radius: 100%;
+      }
+      .video-text-container {
+        display: inline-block;
+        width: 85%;
+        vertical-align: top;
+        margin-left: 5px;
+      }
+      .video-title {
+        font-weight: 500;
+        font-size: 14px;
+        margin-bottom: 10px;
+        margin-top: 0;
+        line-height: 20px;
+      }
+      .video-uploader,
+      .video-stats {
+        font-size: x-small;
+        color: grey;
+        margin-top: 5px;
+        margin-bottom: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <input class="search-bar" type="text" placeholder="Search" />
+    </p>
+
+    <div class="video-preview">
+      <div>
+        <img src="img/thumbnail-1.webp" alt="" class="thumbnail" />
+      </div>
+      <div class="video-info">
+        <div class="channel-img-container">
+          <img src="img/channel-1.jpeg" alt="" class="channel-img" />
+        </div>
+        <div class="video-text-container">
+          <p class="video-title">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+          </p>
+          <p class="video-uploader">Marques Brownlee</p>
+          <p class="video-stats">3.4M views &middot; 6 months ago</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div>
+        <img src="img/thumbnail-2.webp" alt="" class="thumbnail" />
+      </div>
+      <div class="video-info">
+        <div class="channel-img-container">
+          <img src="img/channel-2.jpeg" alt="" class="channel-img" />
+        </div>
+        <div class="video-text-container">
+          <p class="video-title">Try Not To Laugh Challenge #9</p>
+          <p class="video-uploader">Markipilier</p>
+          <p class="video-stats">19M views &middot; 4 years ago</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
