@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nested flexbox practice</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      p {
+        padding: 0;
+        margin: 0;
+      }
+      .overview {
+        display: flex;
+      }
+      .content-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .profile-pic {
+        padding-right: 10px;
+        width: 60px;
+      }
+      .author {
+        font-weight: bold;
+      }
+      .author-link {
+        color: rgb(86, 86, 86);
+      }
+      .text {
+        margin-top: 5px;
+      }
+      .video-preview {
+        width: 340px;
+        height: 100px;
+        margin-top: 16px;
+        border: 2px solid rgb(210, 210, 210);
+        border-radius: 15px;
+        display: flex;
+        cursor: pointer;
+      }
+      .video-thumbnail {
+        width: 170px;
+        border-radius: 13px 0 0 13px;
+        border: none;
+        background-color: rgb(210, 210, 210);
+      }
+      .thumbnail-img {
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+      }
+      .video-info {
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+      }
+      .video-website {
+        color: rgb(101, 101, 101);
+        margin-top: 15px;
+      }
+      .video-title {
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overview">
+      <div class="profile-pic-container">
+        <img src="YouTube/img/my-channel.jpeg" alt="" class="profile-pic" />
+      </div>
+      <div class="content-container">
+        <div>
+          <span class="author">supersimple.dev</span>
+          <span class="author-link">@SuperSimpleDev</span>
+        </div>
+        <div class="text">
+          What is backend web development? A complete overview. New video is up!
+        </div>
+        <div class="video-preview">
+          <div class="video-thumbnail">
+            <!-- <img src="YouTube/img/channel-1.jpeg" alt="" class="thumbnail-img"> -->
+          </div>
+          <div class="video-info">
+            <p class="video-website">youtube.com</p>
+            <p class="video-title">
+              Backend web development - a compelete overview (2021)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
