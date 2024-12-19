@@ -14,14 +14,21 @@
   margin-right: 30px;
   display: flex;
   flex-direction: row;
-  column-gap: 20px;
+  column-gap: 10px;
   align-items: center;
 }
 .hamburger-menu {
   height: 25px;
+  padding: 7px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.hamburger-menu:hover {
+  background-color: rgb(211, 211, 211);
 }
 .youtube-logo {
   height: 20px;
+  cursor: pointer;
 }
 
 /* Search bar */
@@ -42,8 +49,8 @@
 
 .search-input {
   font-size: 15px;
-  width: 90%;
-  min-width: 100px;
+  flex: 1;
+  width: 0;
   border-radius: 40px 0 0 40px;
   padding: 0 10px 0 15px;
   transition: border 0.15s;
@@ -95,7 +102,44 @@
 }
 
 .right-section {
-  background-color: lightcyan;
-  width: 200px;
   margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  column-gap: 15px;
+}
+
+.upload-button,
+.youtube-apps-button,
+.notif-button,
+.my-channel-button {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.upload-button:hover,
+.youtube-apps-button:hover,
+.notif-button:hover {
+  background-color: rgb(228, 228, 228);
+}
+
+.upload-button-icon,
+.youtube-apps-button-icon,
+.notif-button-icon {
+  height: 25px;
+  width: 25px;
+}
+
+.my-channel-button-img {
+  height: 35px;
 }
