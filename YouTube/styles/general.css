@@ -5,6 +5,7 @@ html {
 body {
   margin: 0;
   padding-top: 60px;
+  padding-left: 90px; /* wider than sidebar */
 }
 
 p {
