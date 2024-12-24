@@ -6,9 +6,25 @@
   row-gap: 30px;
 }
 
+.thumbnail-container {
+  position: relative;
+}
+
 .thumbnail {
   border-radius: 10px;
   width: 100%;
+}
+
+.video-length {
+  padding: 3px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 6px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.615);
+  border-radius: 5px;
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
 }
 
 /* Channel image, video title, uploader, views */
