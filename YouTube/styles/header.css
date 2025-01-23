@@ -188,3 +188,19 @@
 .my-channel-button-img {
   height: 35px;
 }
+
+.notif-badge {
+  background-color: rgb(223, 62, 62);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 7px;
+  right: 4px;
+  color: white;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  margin: 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
