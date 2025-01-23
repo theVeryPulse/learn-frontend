@@ -29,7 +29,6 @@
   }
 }
 
-
 .thumbnail-container {
   position: relative;
 }
@@ -41,7 +40,6 @@
 
 .video-length {
   padding: 3px;
-  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 6px;
   color: white;
   background-color: rgba(0, 0, 0, 0.615);
