@@ -13,7 +13,7 @@
 .sidebar-button {
   /* border: 1px solid black; */
   border-radius: 10px;
-  height: 70px;
+  min-height: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
