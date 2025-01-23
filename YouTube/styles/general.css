@@ -12,3 +12,13 @@ body {
 p {
   margin: 0;
 }
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: inherit;
+}

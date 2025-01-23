@@ -58,7 +58,7 @@
 .tooltip {
   color: white;
   background-color: rgba(0, 0, 0, 0.534);
-  font-size: 4px;
+  font-size: 10px;
   white-space: nowrap;
   overflow: hidden;
   padding: 10px;
@@ -71,7 +71,7 @@
 }
 
 .search-button {
-  position: relative;
+  position: relative; /* For positioning the tooltip */
 }
 
 .voice-search-button,
